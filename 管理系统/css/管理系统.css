@@ -1,0 +1,236 @@
+.system{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.system .system-top{
+    height: 90px;
+    width: 100%;
+    position: relative;
+    background: #7ab5e9;
+}
+.system .system-top .logo{
+    width: 428px;
+    height: 100%;
+    margin-left:30px;
+    float: left;
+    background: url(../images/logo.png)no-repeat center 30px;
+}
+.system .system-top  .login{
+    width: 248px;
+    height:22px;
+    border:1px solid #e3e2e2;
+    border-top:none;
+    position: absolute;
+    background: #fff;
+    right: 38px;
+    top:0;
+}
+.system .system-top  .login .welcome{
+    height:100%;
+    width: 124px;
+    margin-left: 12px;
+    float: left;
+}
+.system .system-top  .login .welcome .dl{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    /* vertical-align: middle; 实现一个小盒子在大盒子内居中 */
+    vertical-align: middle;
+    background: url(../images/dl.png);
+
+}
+.system .system-top  .login .wel-right{
+    width: 100px;
+    height: 100%;
+    float: left;
+}
+.system .system-top  .login .wel-right .tc{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../images/tc.png);
+    vertical-align: middle;
+}
+.system .system-top .r-main{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    text-align: center;
+}
+.system .system-top .r-main li{
+    width: 95px;
+    height: 56px;
+    float: left;
+    font-size:12px;
+    color: #fff;
+}
+.system .system-top .r-main li p{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    background: url(../images/n1.png);
+}
+.system .system-top .r-main li .lo2{
+    background: url(../images/n2.png);
+}
+.system .system-top .r-main li .lo3{
+    background: url(../images/n3.png);
+}
+.system .system-top .r-main li .lo4{
+    background: url(../images/n4.png);
+}
+.system .system-top .r-main li .lo5{
+    background: url(../images/n5.png);
+}
+.system .system-top .r-main li .lo6{
+    background: url(../images/n6.png);
+}
+.system .system-top .r-main li .lo7{
+    background: url(../images/n7.png);
+}
+.system .system-top .r-main li:hover{
+    background: url(../images/libj.png);
+}
+.system .system-top .r-main li a{
+    color: #fff;
+}
+
+.system .system-bottom{
+    position: absolute;
+    width: 100%;
+    top:90px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.system .system-bottom .system-left{
+    width: 197px;
+    height:100%;
+    background: #417ec8;
+}
+.system .system-bottom .system-left .sl-top{
+    width: 197px;
+    height: 36px;
+    border-top:1px solid #2869bd;
+}
+.system .system-bottom .system-left .sl-top .sbb{
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    vertical-align:middle;
+    margin-top:10px;
+    margin-left:20px;
+    background: url(../images/left_01.png);
+}
+.system .system-bottom .system-left .sl-top .sbxx{
+    font-size:12px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-left:20px;
+}
+.system .system-bottom .system-left .sl-top:nth-child(1){
+    background: url(../images/e_01.jpg) no-repeat;
+}
+.system .system-bottom .system-left .sl-main p{
+    width: 100%;
+    height:36px;
+    background:url(../images/left_hover.jpg);
+}
+.system .system-bottom .system-left .sl-main p .sb{
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    vertical-align:middle;
+    margin-top:10px;
+    margin-left:20px;
+    background: url(../images/left_01.png);
+}
+.system .system-bottom .system-left .sl-main p .sbxx{
+    font-size:12px;
+    display: inline-block;
+    margin-top: 8px;
+    margin-left:20px;
+}
+.system .system-bottom .system-left .sl-main:hover ul{
+    display: block;
+}
+.system .system-bottom .system-left .sl-main ul{
+    display: none;
+}
+.system .system-bottom .system-left .sl-main ul li{
+    font-size:12px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+.system .system-bottom .system-right{
+    position: absolute;
+    top: 0px;
+    left: 197px;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+}
+.system .system-bottom .system-right .s-r-top{
+    height:24px;
+    border-bottom:1px solid #ccc;
+    font-size:12px;
+    line-height: 24px;
+}
+.system .system-bottom .system-right .s-r-top .home{
+    display:inline-block;
+    width: 5px;
+    height: 7px;
+    margin-left:10px;
+    background:url(../images/home.jpg);
+}
+.system .system-bottom .system-right .s-r-center{
+    height:50px;
+}
+.system .system-bottom .system-right .s-r-center .center{
+    display:block;
+    width: 24px;
+    height: 23px;
+    float: left;
+    margin-top:12px;
+    margin-left:10px;
+    background: url(../images/seacth.jpg);
+}
+.system .system-bottom .system-right .s-r-center input{
+    border: 1px solid #ccc;
+    width: 120px;
+    height: 24px;
+    margin-right:12px;
+}
+.system .system-bottom .system-right table{
+    border:1px solid #ccc;
+    /* width: 1692px; */
+    height: 192px;
+    font-size: 12px;
+    margin-left:10px;
+    text-align: center;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+.system .system-bottom .system-right table tr{
+    height: 30px;
+}
+.system .system-bottom .system-right table td{
+    width: 140px;
+    /* border: 1px solid #ccc; */
+}
+.system .system-bottom .system-right table ul li{
+    width:50px;
+    text-align: center;
+}
+.system .system-bottom .system-right table tr:nth-child(2n){
+    background: #f1f1f1;
+}
+.system .system-bottom .system-right table td ul li{
+    float: left;
+}

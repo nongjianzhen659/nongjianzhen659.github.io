@@ -5,5 +5,5 @@
 ## 管理系统
 <a href="https://nongjianzhen659.github.io/管理系统/index.html">管理系统</a>
 ## 7月30案例
-<a herf="https://nongjianzhen659.github.io/7.30案例/安卓小人.html">安卓小人</a>
-<a herf="https://nongjianzhen659.github.io/7.30案例/表单框.html">表单框</a>
+<a href="https://nongjianzhen659.github.io/7.30案例/安卓小人.html">安卓小人</a>
+<a href="https://nongjianzhen659.github.io/7.30案例/表单框.html">表单框</a>

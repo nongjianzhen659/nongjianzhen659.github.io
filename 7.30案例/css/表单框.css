@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 884px;
+    height:100px;
+    margin:100px auto;
+    border:3px solid #ccc;
+    background: #e9e7e8;
+    border-radius:20px;
+    box-shadow: 0px 5px 5px 1px #c1c1c1;
+}
+.seach{
+    width: 684px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top:10px;
+    /* border:none; */
+    border-radius:10px;
+    float: left;
+    outline: none;
+    font-size:34px;
+    color:#a8a8a8;
+    padding-left:16px;
+    box-shadow: 0px 0px 10px 1px #c1c1c1;
+}
+.bt{
+    width: 100px;
+    height: 70px;
+    float: left;
+    border-radius:10px;
+    font-size: 32px;
+    color: #fff;
+    margin-left:20px;
+    margin-top:10px;
+    outline: none;
+    background: #1fa0b5;
+}

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 502px;
+    height: 502px;
+    margin:100px auto;
+    position: relative;
+    background:#cccccc;
+}
+.box .tou{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top:25px;
+    left:110px;
+    background:#51a251;
+    margin-left:40px;
+    border-radius:50% 50% 0 0 /100% 100% 0 0;
+}
+.box .zyj{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 60px;
+    top:50px;
+    background:#fff;
+    border-radius:50px;
+}
+.box .yyj{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 60px;
+    top:50px;
+    background:#fff;
+    border-radius:50px;
+}
+div.zs{
+    width: 30px;
+    height: 180px;
+    float: left;
+    margin-right:10px;
+    margin-top:10px;
+    border-radius:10px;
+    position: absolute;
+    left: 110px;
+    top: 140px;
+    background: #51a251;
+}
+div.st{
+    width: 200px;
+    height: 230px;
+    margin-top:10px;
+    float: left;
+    position: absolute;
+    left:150px;
+    top:130px;
+    border-radius: 0 0 20px 20px;
+    background: #51a251;
+}
+div.ys{
+    width: 30px;
+    height: 180px;
+    float: left;
+    margin-right:10px;
+    margin-top:10px;
+    border-radius:10px;
+    margin-left:10px;
+    position: absolute;
+    right: 100px;
+    top:140px;
+    background: #51a251;
+}
+div.zt{
+    width: 30px;
+    height: 80px;
+    background: #51a251;
+    position: absolute;
+    bottom:60px;
+    left:190px;
+    border-radius:0 0 50px 50px;
+}
+div.yt{
+    width: 30px;
+    height: 80px;
+    background: #51a251;
+    position: absolute;
+    bottom:60px;
+    right:190px;
+    border-radius:0 0 50px 50px;
+}

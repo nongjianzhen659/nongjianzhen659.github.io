@@ -1,0 +1,193 @@
+/* 
+* @Author: Marte
+* @Date:   2019-06-29 17:44:32
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-07-01 15:29:52
+*/
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html,body{height: 100%;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+#home{
+    height:100%;
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+}
+/*nav*/
+.h-nav{
+    height:88px;
+    background: #fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h-nav a{
+    flex:1;
+    height:88px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 88px;
+    color: #cccccc;
+}
+.h-nav a:hover{
+    color:#e02e24;
+    border-bottom: 2px solid #e02e24;
+}
+/* main内容 */
+#home .main{
+    height: 100%;
+    flex: 1;
+    overflow-y: scroll;
+}
+/*lunbo*/
+.h-lunbo{
+    height:280px;
+    position:relative;
+}
+.h-lunbo .btn{
+    right: 32px;
+    bottom:20px;
+    position: absolute;
+}
+.h-lunbo .btn a{
+    float: left;
+    width:12px;
+    height:12px;
+    border:1px solid gray;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+}
+.h-lunbo .btn a:hover{
+    background-color: #ff0000;
+}
+.h-lunbo .list{
+    width:100%;
+    height:280px;
+    overflow:hidden;
+}
+.h-lunbo .list img{
+    width:100%;
+    height:100%;
+}
+/*tubiao*/
+.h-tubiao{
+    height:310px;
+    overflow-x: scroll;
+     border-bottom: 20px solid #f8f9f9;
+}
+.h-tubiao div{
+    height:49%;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.h-tubiao div a .icon{
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.h-tubiao div a{
+    align-items: center;
+    width:20%;
+    text-align: center;
+    flex-shrink: 0;
+}
+.h-tubiao div a span{
+    display:block;
+    height:15px;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+
+/*huodong*/
+.h-huodong{
+    height:230px;
+    margin:0 auto;
+}
+.h-huodong img{
+    width: 100%;
+}
+
+/* goumai购买 */
+.goumai{
+    height: 230px;
+    display: flex;
+    margin-top: 10px;
+}
+.goumai div{
+    flex: 1;
+    width: 49%;
+    height:230px;
+    margin-right: 2%;
+}
+.goumai div:nth-child(2){
+    font-size: 25px;
+}
+.goumai div img{
+    width: 100%;
+    height: 100%;
+}
+.goumai div span{
+    background: #b80808;
+    font-size: 30px;
+    color: #f4ca9b;
+    border-radius: 5px;
+    padding: 0 8px 0 8px;
+    margin: 10px;
+}
+.goumai div p{
+    margin-top: 10px;
+    font-size: 22px;
+}
+.goumai div p:nth-child(1){
+    margin-top: 30px;
+}
+.goumai div p:nth-child(2){
+    color: #c3c3c3;
+    font-size: 18px;
+}
+
+
+/* 底栏footer */
+.footer{
+    height:77px;
+    border-top:1px solid #dadada;
+    display:flex;
+}
+.footer a{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#757778;
+}
+.footer a:nth-child(1){
+    color: #df2d24;
+}
+.footer i{
+    font-size: 46px;
+}
+.footer span{
+    font-size: 20px;
+}
+
+.footer a:hover{
+	color:#df2d24 ;
+}
+
+
+
+
+
+
+
+
+
+
+

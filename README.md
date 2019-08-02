@@ -10,4 +10,4 @@
 <a href="https://nongjianzhen659.github.io/7.30案例/表单框.html">表单框</a>
 
 ##
-<a herf="https://nongjianzhen659.github.io/拼多多/index.html">拼</a>
+<a href="https://nongjianzhen659.github.io/拼多多/index.html">拼</a>

@@ -10,5 +10,9 @@
 <a href="https://nongjianzhen659.github.io/7.30案例/表单框.html">表单框</a>
 ## 搜石网
 <a href="https://nongjianzhen659.github.io/搜石网/index.html">搜石网</a>
+## allpyra
+<a href="https://nongjianzhen659.github.io/allpyra/index.html">allpyra</a>
+## 开源博客
+<a href="https://nongjianzhen659.github.io/开源博客/index.html">开源博客</a>
 
 

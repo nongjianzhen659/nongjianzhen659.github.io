@@ -1,0 +1,887 @@
+html,
+body{
+    width: 100%;
+    /* height: 100%; */
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    height: 0;
+    width: 0;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+.soushi .conten{
+    width: 1230px;
+    height: 100%;
+    margin:auto;
+}
+/* 头部 */
+.soushi .header{
+    height: 32px;
+    background: #f2f2f2;
+    font-size: 12px;
+}
+.soushi .header .h-left{
+    width: 500px;
+    height: 100%;
+}
+.soushi .header .h-left ul li{
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #555555;
+}
+.soushi .header .h-left ul li .home{
+    display:block;
+    width: 16px;
+    height: 14px;
+    float: left;
+    margin-top:10px;
+    margin-right: 13px;
+    background: url(../images/home.png);
+}
+.soushi .header .h-left ul li a{
+    color: #555555;
+    margin-right:28px;
+}
+.soushi .header .h-left ul li a:hover{
+    color: #f40;
+}
+.soushi .header .h-right{
+    width: 500px;
+    height: 100%;
+    position: relative;
+}
+.soushi .header .h-right ul{
+       position: absolute;
+       right: 0;
+}
+.soushi .header .h-right ul li{
+    float: left;
+    line-height: 32px;
+    margin-right: 45px;
+    color: #555555;
+}
+.soushi .header .h-right ul li a{
+    color: #555555;
+}
+.soushi .header .h-right ul li a::after{
+    content: "";
+    display: block;
+    width: 7px;
+    height: 4px;
+    position: absolute;
+    top:15px;
+    left: 45px;
+    background: url(../images/b@2x.png);
+}
+.soushi .header .h-right ul li .sjQR{
+    width: 84px;
+    height: 88px;
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: url(../images/head_ewm@2x.png);
+}
+.soushi .header .h-right ul li:nth-of-type(3):hover .sjQR{
+    display: block;
+}
+/* 导航 */
+.soushi .nav .n-main{
+    height: 188px;
+}
+.soushi .nav .n-main .main-l{
+    width: 200px;
+    height: 188px;
+    float: left;
+}
+.soushi .nav .n-main .main-l .l-t{
+    height: 148px;
+    background: url(../images/logo.png) no-repeat center;
+}
+.soushi .nav .n-main .main-l .l-b{
+    width: 100%;
+    height: 40px;
+    background: #0095d5;
+    line-height: 40px;
+    font-size:15px;
+    color:#fff;
+    cursor:pointer;
+}
+.soushi .nav .n-main .main-l .l-b a::before{
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 15px;
+    vertical-align: middle;
+    margin-left: 14px;
+    margin-right: 13px;
+    background: url(../images/sort_icon@2x.png);
+}
+.soushi .nav .n-main .main-r{
+    width: 1020px;
+    height: 100%;
+    float: left;
+}
+.soushi .nav .n-main .main-r .search{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.soushi .nav .n-main .main-r .search .s-title{
+    width:584px ;
+    height: 38px;
+    margin:48px auto;
+    position: relative;
+}
+.soushi .nav .n-main .main-r .search .s-title .s-logo{
+    display:block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-left:13px;
+    background: url(../images/fdj@2x.png);
+}
+.soushi .nav .n-main .main-r .search .s-title input:nth-of-type(1){
+    width: 448px;
+    height: 36px;
+    float: left;
+    padding-left:40px;
+    border: 2px solid #ff6000;
+}
+.soushi .nav .n-main .main-r .search .s-title input:nth-of-type(2){
+    width: 92px;
+    height: 40px;
+    cursor:pointer;
+    color: #fff;
+    font-size:16px;
+    background: #ff6000;
+}
+.soushi .nav .n-main .main-r .search .s-title ul li{
+    float: left;
+    font-size:11px;
+    width: 52px;
+    margin-top:13px;
+    text-align: center;
+}
+.soushi .nav .n-main .main-r .search .s-title ul li a{
+    color: #555555;
+}
+.soushi .nav .n-main .main-r .search .s-title ul li a:hover{
+    color: #ff6000;
+}
+.soushi .nav .n-main .main-r .search .s-title ul li:nth-child(1){
+    border-right:1px solid #ccc;
+    color: #555555;
+}
+.soushi .nav .n-main .main-r .nav-title{
+    width: 100%;
+    height: 38px;
+}
+.soushi .nav .n-main .main-r .nav-title ul li{
+    float: left;
+    height: 100%;
+    margin-right:60px;
+    line-height: 38px;
+    color: #ff6000;
+    text-align: center;
+    position: relative;
+}
+.soushi .nav .n-main .main-r .nav-title ul li a{
+    display: block;
+    color: #555555;
+    font-weight: 600;
+}
+.soushi .nav .n-main .main-r .nav-title ul li a:hover{
+    color: #ff6000;
+}
+.soushi .nav .n-main .main-r .nav-title ul li .hot{
+    display: block;
+    width: 30px;
+    height: 17px;
+    position: absolute;
+    background: url(../images/HOT@2x.png);
+    top:-12px;
+    right: -27px;
+}
+
+
+
+
+.soushi .banner{
+    background: #f4f4f4;
+    height: 420px;
+    width: 100%;
+}
+.soushi .banner .b-left{
+    width: 200px;
+    height: 410px;
+    float: left;
+}
+.soushi .banner .b-left .l-main{
+    width: 100%;
+    height: 136px;
+    background: #ffffff;
+    position: relative;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+.soushi .banner .b-left .l-main .l-nav{
+    width: 170px;
+    height: 120px;
+    margin: 15px;
+}
+.soushi .banner .b-left .l-main .l-nav p{
+    width: 21px;
+    height: 21px;
+    float: left;
+    background: url(../images/icon3.png);
+}
+.soushi .banner .b-left .l-main:hover{
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+.soushi .banner .b-left .l-main .l-nav a{
+    color: #999999;
+    
+}
+.soushi .banner .b-left .l-main .l-nav span{
+    line-height: 16px;
+    margin-left: 10px;
+}
+.soushi .banner .b-left .l-main .l-nav ul{
+    clear: both;
+    margin-left:12px;
+    margin-top:10px;
+}
+.soushi .banner .b-left .l-main .l-nav li{
+    float: left;
+    width: 60px;
+    height: 30px;
+    font-size:13px;
+    line-height: 30px;
+    text-align: center;
+}
+.soushi .banner .b-left .l-main .l-nav li a:hover{
+    display: block;
+    color: #ff6000;
+}
+
+.soushi .banner .b-left .l-main .r-nav{
+    width: 500px;
+    height: 410px;
+    position: absolute;
+    top:0;
+    left:200px;
+    display: none;
+    background: #fff;
+}
+.soushi .banner .b-left .l-main:hover .r-nav{
+    display: block;
+}
+.soushi .banner .b-left .l-main .r-nav .n-main{
+    width: 480px;
+    height: 200px;
+    margin: auto;
+}
+.soushi .banner .b-left .l-main .r-nav .n-main p{
+    color: #555555;
+    font-size:20px;
+    margin-left:20px;
+    margin-top:20px;
+}
+.soushi .banner .b-left .l-main .r-nav .n-main ul{
+    margin-left:40px;
+    margin-top:20px;
+}
+.soushi .banner .b-left .l-main .r-nav .n-main li{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+.soushi .banner .b-left .l-main .r-nav .n-main li a{
+    color: #000;
+}
+.soushi .banner .b-left .l-main .r-nav .n-main li a:hover{
+    color: #ff6000;
+}
+
+
+
+
+.soushi .banner .b-main{
+    width: 800px;
+    height: 400px;
+    float: left;
+    margin:10px 10px 0px 10px;
+    background: url(../images/banner.jpg);
+}
+.soushi .banner .b-right{
+    width: 200px;
+    height: 400px;
+    float: left;
+    margin-top:10px;
+    background: #fff;
+}
+.soushi .banner .b-right .user{
+    width: 200px;
+    height: 195px;
+    border-bottom: 1px solid #ccc;
+}
+.soushi .banner .b-right .user .lo{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    margin-top:50px;
+    background: url(../images/head@2x.png);
+}
+.soushi .banner .b-right .user p{
+    font-size:12px;
+    text-align: center;
+    margin-top:22px;
+}
+.soushi .banner .b-right .user .login{
+    width: 156px;
+    height: 26px;
+    margin: auto;
+    margin-top:37px;
+}
+.soushi .banner .b-right .user .login div{
+    float: left;
+    width: 70px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    background: #ff6000;
+}
+.soushi .banner .b-right .user .login div a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.soushi .banner .b-right .user .login div:nth-child(2){
+    background: #fff;
+    width: 66px;
+    height: 24px;
+    margin-left:16px;
+    border:1px solid #ff6000;
+}
+.soushi .banner .b-right .new{
+    width: 200px;
+    height: 178px;
+}
+.soushi .banner .b-right .new a{
+    margin-left:30px;
+    font-size:12px;
+    display: block;
+    float: left;
+    width: 52px;
+    height: 29px;
+    line-height: 29px;
+    color: #ff6000;
+    border-bottom:2px solid #ff6000;
+}
+
+.soushi .banner .b-right .new p{
+    float: left;
+    font-size:11px;
+    margin-left:25px;
+    padding:3px;
+}
+.soushi .banner .b-right .new p:nth-of-type(1){
+    margin-top: 22px;
+}
+
+/* main1 */
+.soushi .main1 .cjl{
+    width: 100%;
+    height: 31px;
+    margin-top:33px;
+}
+.soushi .main1 .cjl li{
+    width: 400px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 31px;
+    border-right: 1px solid #eeeeee;
+}
+.soushi .main1 .cjl li:nth-of-type(3){
+    border:none;
+}
+.soushi .main1 .cjl li i{
+    color: #ff6000;
+    font-size: 18px;
+}
+.soushi .main1 .cjl li span{
+    margin-left:21px;
+    font-size: 12px;
+}
+.soushi .main1 .title{
+    width: 100%;
+    height: 20px;
+    margin-top:20px;
+    line-height: 20px;
+}
+.soushi .main1 .title span:nth-child(1){
+    font-size:23px;
+}
+.soushi .main1 .title span:nth-child(2){
+    font-size: 12px;
+    color: #999999;
+}
+.soushi .main1 .main-b{
+    width: 100%;
+    height: 615px;
+    margin-top:23px;
+    margin-bottom:35px;
+}
+.soushi .main1 .main-b .b-l{
+    width: 234px;
+    height:594px ;
+    float: left;
+    background: url(../images/youxuan.jpg); 
+}
+.soushi .main1 .main-b .b-r{
+    width:981px ;
+    height:615px ;
+    float: left;
+    margin-left: 15px;
+}
+.soushi .main1 .main-b .b-r .b-img{
+    width: 232px;
+    height: 298px;
+    float: left;
+    margin-right: 15px;
+    border:1px solid #f4f4f4;
+}
+.soushi .main1 .main-b .b-r .b-img:nth-child(-n+4){
+    margin-bottom: 15px;
+}
+.soushi .main1 .main-b .b-r .b-img:hover{
+    border:1px solid #ff6000;
+}
+.soushi .main1 .main-b .b-r .b-img p{
+    margin-left:10px;
+    color: #999999;
+    font-size:11px;
+    margin-top:10px;
+}
+.soushi .main1 .main-b .b-r .b-img p:nth-of-type(1){
+    font-size: 17px;
+    color: #333333;
+}
+.soushi .main1 .main-b .b-r .b-img p:nth-of-type(1) span:nth-child(2){
+    font-size: 11px;
+    color: #999999;
+}
+.soushi .main1 .main-b .b-r .b-img p:nth-of-type(3) span{
+    color: #ff6000;
+}
+
+
+/* main2 */
+.soushi .main2{
+    background: #f4f4f4;
+    overflow: hidden;
+}
+.soushi .main2 .main-center{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* background: red; */
+}
+.soushi .main2 .main-center .dg{
+    width: 235px;
+    height: 300px;
+    float: left;
+    background: url(../images/d1@2x.png);
+}
+.soushi .main2 .main-center .cg{
+    width: 650px;
+    height: 300px;
+    float: left;
+    margin-left: 15px;
+    background: #fff;
+}
+.soushi .main2 .main-center .cg .cglc{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    font-size: 18px;
+    border-bottom: 1px solid #eeeeee;
+}
+.soushi .main2 .main-center .cg ul{
+    padding: 35px;
+}
+.soushi .main2 .main-center .cg li{
+    height: 150px;
+    float: left;
+    margin-left: 3px;
+    text-align: center;
+}
+.soushi .main2 .main-center .cg li span{
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 24px;
+    margin:10px;
+    background: url(../images/icon1.png) no-repeat;
+}
+.soushi .main2 .main-center .jydt{
+    width: 315px;
+    height: 300px;
+    float: left;
+    margin-left: 15px;
+    background: #fff;
+}
+.soushi .main2 .main-center .jydt .dt{
+    height: 32px;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 20px;
+}
+.soushi .main2 .main-center .jydt .jy{
+    height: 36px;
+    background: #f9f9f9;
+}
+.soushi .main2 .main-center .jydt  li{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    width: 75px;
+    text-align: center;
+}
+.soushi .main2 .main-center .jydt  li span{
+    color: #ff6000;
+}
+
+.soushi .main3{
+    height: 1111px;
+}
+.soushi .main3 .tj{
+    width: 100%;
+    height: 340px;
+}
+.soushi .main3 .tj .tjw{
+    width: 220px;
+    height: 100%;
+    float: left;
+    background: url(../images/ad.png);
+}
+.soushi .main3 .tj-main{
+    width: 1000px;
+    height: 100%;
+    float: left;
+}
+.soushi .main3 .tj-main .yy{
+    width: 250px;
+    height: 340px;
+    float: left;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+.soushi .main3 .tj-main .yy img{
+    display: block;
+    margin:20px;
+     width:210px;
+     height:158px;
+}
+.soushi .main3 .tj .tj-main .yy p{
+    font-size: 17px;
+    color: #333333;
+    margin-left: 20px;
+    margin-top:10px;
+}
+.soushi .main3 .tj-main .tj .yy  p:nth-of-type(1) span:nth-child(2){
+    font-size: 11px;
+    color: #999999;
+}
+.soushi .main3 .tj .tj-main .yy p:nth-of-type(3) span{
+    color: #ff6000;
+}
+
+.soushi .main3 .title{
+    width: 100%;
+    height: 20px;
+    margin-top:20px;
+    line-height: 20px;
+}
+.soushi .main3 .title span:nth-child(1){
+    font-size:23px;
+}
+.soushi .main3 .title span:nth-child(2){
+    font-size: 12px;
+    color: #999999;
+}
+.soushi .main3 .main-b{
+    width: 100%;
+    height: 615px;
+    margin-top:23px;
+    margin-bottom:35px;
+}
+.soushi .main3 .main-b .b-l{
+    width: 234px;
+    height:594px ;
+    float: left;
+    background: url(../images/youxuan.jpg); 
+}
+.soushi .main3 .main-b .b-r{
+    width:981px ;
+    height:615px ;
+    float: left;
+    margin-left: 15px;
+}
+.soushi .main3 .main-b .b-r .b-img{
+    width: 232px;
+    height: 298px;
+    float: left;
+    margin-right: 15px;
+    border:1px solid #f4f4f4;
+}
+.soushi .main3 .main-b .b-r .b-img:nth-child(-n+4){
+    margin-bottom: 15px;
+}
+.soushi .main3 .main-b .b-r .b-img:hover{
+    border:1px solid #ff6000;
+}
+.soushi .main3 .main-b .b-r .b-img p{
+    margin-left:10px;
+    color: #999999;
+    font-size:11px;
+    margin-top:10px;
+}
+.soushi .main3 .main-b .b-r .b-img p:nth-of-type(1){
+    font-size: 17px;
+    color: #333333;
+}
+.soushi .main3 .main-b .b-r .b-img p:nth-of-type(1) span:nth-child(2){
+    font-size: 11px;
+    color: #999999;
+}
+.soushi .main3 .main-b .b-r .b-img p:nth-of-type(3) span{
+    color: #ff6000;
+}
+
+
+
+
+/* 底部 */
+.soushi .footer{
+    width: 100%;
+    height: 319px;
+    background: #eeeeee;
+    border-bottom: 1px solid #ccc;
+}
+.soushi .footer .fw{
+    width: 100%;
+    height: 120px;
+    border-bottom:1px solid #ccc;
+}
+.soushi .footer .fw ul{
+    margin-left: 60px;
+}
+.soushi .footer .fw li{
+    width: 280px;
+    height: 120px;
+    float: left;
+}
+.soushi .footer .fw li i{
+    display:block;
+    width: 62px;
+    height: 62px;
+    float: left;
+    margin-top:30px;
+    background: url(../images/icon2.png);
+}
+.soushi .footer .fw li span{
+    font-size: 22px;
+    line-height: 120px;
+    margin-left:25px;
+    color: #41a6fe;
+}
+.soushi .footer .sh{
+    width: 720px;
+    height: 200px;
+    float: left;
+}
+.soushi .footer .sh .sh1{
+    margin-top:30px;
+   
+}
+.soushi .footer .sh .sh1 .listss{
+    float: left;
+    width: 179px;
+    height: 136px;
+   
+}
+.soushi .footer .sh .sh1 .listss:nth-child(4){
+    border-right: 1px solid #ccc;
+}
+.soushi .footer .sh .sh1 .listss ul li{
+    padding-top:5px;
+     font-size: 11px;
+     list-style: disc;
+     color: #999999;
+     margin-left:17px;
+}
+
+.soushi .footer .f-qr{
+    width: 500px;
+    height: 200px;
+    float: left;
+}
+.soushi .footer .f-qr .qr-main{
+    width: 320px;
+    height: 180px;
+    margin-left: 70px;
+    overflow: hidden;
+}
+.soushi .footer .f-qr .qr-main .qr-im{
+    width: 114px;
+    height: 140px;
+    margin-top:20px;
+    float: left;
+}
+.soushi .footer .f-qr .qr-main p{
+    font-size: 12px;
+    color: #999999;
+}
+.soushi .footer .f-qr .qr-main h2{
+    font-size:18px;
+    color: #41a6fe;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 右浮动导航 */
+.soushi .float-nav{
+    width: 49px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #333333;
+}
+.soushi .float-nav .f-top{
+    margin-top:48px;
+}
+.soushi .float-nav .f-top li{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.soushi .float-nav .f-top li span{
+    display: block;
+    width: 21px;
+    height: 22px;
+    margin: auto;
+    margin-top:10px;
+    background: url(../images/icon4.png) no-repeat;
+}
+.soushi .float-nav .f-top li .icon1{
+    background-position: 0 -45px;
+}
+.soushi .float-nav .f-top li .icon2{
+    background-position: 0 -90px;
+}
+.soushi .float-nav .f-top li .icon3{
+    background-position: 0 -135px;
+}
+.soushi .float-nav .f-top li .icon4{
+    background-position: 0 -195px;
+}
+.soushi .float-nav .f-top li .icon5{
+    background-position: 0 -240px;
+}
+.soushi .float-nav .f-top li:nth-of-type(3) .state{
+    border-bottom: none;
+}
+.soushi .float-nav .f-top li:nth-of-type(6) .state{
+    border-bottom: none;
+}
+.soushi .float-nav .f-top li:nth-of-type(4){
+    margin-top:160px;
+}
+.soushi .float-nav .f-top li:hover{
+    background:	#5CACEE;
+}
+.soushi .float-nav .f-top li a{
+    color: #fff;
+    display: block;
+}
+.soushi .float-nav .f-top li .state{
+    display: block;
+    width:35px;
+    margin: auto;
+    font-size:12px;
+    text-align: center;
+    margin-top:9px;
+    padding-bottom:11px;
+    border-bottom:1px solid #555555;
+}
+.soushi .float-nav .f-top li .f-n{
+    width: 120px;
+    height: 160px;
+    right:60px;
+    top:0px;
+    position: absolute;
+    background: #fff url(../images/ewm@2x.png) no-repeat center 10px;
+    display: none;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+.soushi .float-nav .f-top li .f-n .tr-title{
+    color: #333333;
+    font-size:12px;
+    width: 80px;
+    height: 80px;
+    margin-left:25px;
+    margin-top: 110px;
+}
+.soushi .float-nav .f-top li:nth-of-type(1):hover .f-n{
+    display: block;
+}
+.soushi .float-nav .f-top li .f-n .triangle{
+    display: block;
+    margin: 0;
+    width: 0;
+    height: 0;
+    top:50%;
+    right: -20px;
+    position: absolute;
+    margin-top:-15px;
+    border:10px solid transparent;
+    border-left:10px solid #ccc;
+}
+.soushi .float-nav .f-top li .f-n .triangle::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -10px;
+    top:-9px;
+    border:9px solid transparent;
+    border-left:9px solid #fff;
+}

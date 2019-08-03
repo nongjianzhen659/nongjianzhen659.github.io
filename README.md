@@ -8,6 +8,7 @@
 <a href="https://nongjianzhen659.github.io/7.30案例/安卓小人.html">安卓小人</a>
 ##
 <a href="https://nongjianzhen659.github.io/7.30案例/表单框.html">表单框</a>
+## 搜石网
+<a href="https://nongjianzhen659.github.io/搜石网/index.html">搜石网</a>
 
-##
-<a href="https://nongjianzhen659.github.io/拼多多/index.html">拼</a>
+

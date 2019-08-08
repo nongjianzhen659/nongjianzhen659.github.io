@@ -1,0 +1,713 @@
+@function vw($px) {
+    @return ($px / 750) * 100vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#hlj-wrapper {
+    height: 100%;
+    overflow: auto;
+
+    .conten {
+        width: vw(686);
+        height: 100%;
+        margin: auto;
+        // background: red;
+
+    }
+
+    .header {
+        height: vw(108);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .conten {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            // 婚礼纪logo
+            .hlj-logo {
+                width: vw(184);
+                height: vw(64);
+                background: url(../images/logo.png);
+                background-size: cover;
+            }
+
+            // 地区
+            .region {
+                width: vw(70);
+                height: vw(24);
+                font-size: vw(23);
+                line-height: vw(23);
+                margin-left: vw(23);
+                position: relative;
+            }
+
+            .region::after {
+                display: block;
+                content: "";
+                width: vw(18);
+                height: vw(12);
+                position: absolute;
+                top: vw(5);
+                right: 0;
+                background: url(../images/sjx_03.gif);
+                background-size: cover;
+            }
+
+            //菜单栏
+
+            .menu {
+                width: vw(34);
+                height: vw(34);
+                position: absolute;
+                right: 0;
+                background: url(../images/ss_03.gif);
+                background-size: cover;
+            }
+        }
+
+    }
+
+    .main {
+        .banner {
+            height: vw(276);
+            position: relative;
+
+            .conten {
+                background: url(../images/banner.jpg);
+                background-size: cover;
+            }
+
+            img {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+            }
+        }
+
+        // 分类
+        .category {
+            height: vw(348);
+            // background: red;
+
+            ul {
+                width: vw(686);
+                height: 50%;
+                display: flex;
+                // background: green;
+
+                li {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    span {
+                        width: vw(130);
+                        height: vw(100);
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    p {
+                        font-size: vw(22);
+                        color: #383838;
+                    }
+                }
+            }
+        }
+
+
+        // 一些分类
+        .entrance {
+            height: vw(332);
+            width: 100%;
+
+            .conten {
+                display: flex;
+
+                .entrance-left {
+                    width: vw(337);
+                    height: 100%;
+                    background: url(../images/dzqt.png);
+                    background-size: cover;
+                    margin-right: vw(20);
+                    border-radius: vw(25);
+                }
+
+                .entrance-right {
+                    width: vw(338);
+                    height: 100%;
+
+                    .r-top {
+                        width: 100%;
+                        height: vw(158);
+                        background: url(../images/hyjd.png);
+                        background-size: cover;
+                        margin-bottom: vw(15);
+                        border-radius: vw(25);
+                    }
+
+                    .r-bottom {
+                        width: 100%;
+                        height: vw(158);
+                        background: url(../images/zzhl.jpg);
+                        background-size: cover;
+                        border-radius: vw(25);
+                    }
+                }
+            }
+        }
+
+        // 婚姻摄影家
+        .hs {
+            height: vw(150);
+
+            .conten {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                h2 {
+                    font-size: vw(37);
+                    line-height: vw(37);
+                }
+
+                span {
+                    font-size: vw(26);
+                    color: #959595;
+                    line-height: vw(26);
+                    position: absolute;
+                    right: 0;
+                }
+            }
+
+        }
+
+        .business {
+            width: 100%;
+            height: vw(316);
+            overflow-x: auto;
+
+            ul {
+                height: vw(296);
+                display: flex;
+
+                li {
+                    // flex: 1;
+
+                    flex-shrink: 0;
+                    height: 100%;
+                    width: vw(280);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-left: vw(24);
+                    margin-top: vw(10);
+                    border-radius: vw(30);
+                    border: 1px solid #ccc;
+                    box-sizing: border-box;
+                    box-shadow: 0px 0px 10px 0px #ccc;
+
+                    .bs-img {
+                        width: vw(120);
+                        height: vw(120);
+                        margin-top: vw(20);
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            border: 1px solid #ccc;
+                        }
+                    }
+
+                    h2 {
+                        font-size: vw(27);
+                        margin-top: vw(20);
+                    }
+
+                    p:nth-of-type(1) {
+                        height: vw(22);
+                        line-height: vw(22);
+                        margin-top: vw(24);
+
+                        img {
+                            height: 100%;
+
+                        }
+                    }
+
+                    p:nth-of-type(2) {
+                        color: #747474;
+                        font-size: vw(22);
+                        margin-top: vw(14);
+                    }
+                }
+            }
+        }
+
+        //热门城市
+        .hot-city {
+            height: vw(433);
+
+            .conten {
+
+                .city-title {
+                    height: vw(125);
+
+                    h2 {
+                        font-size: vw(32);
+                        line-height: vw(125);
+                    }
+
+                }
+
+                .hot-map {
+                    height: vw(308);
+                    position: relative;
+
+                    .map {
+                        height: vw(189);
+                        background: url(../images/map.png);
+                        background-size: cover;
+                        border-radius: vw(20);
+                    }
+
+                    .city {
+                        width: vw(606);
+                        height: vw(266);
+                        background: #fff;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        border-radius: vw(20);
+                        box-shadow: 0px 0px 5px 0px #ccc;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+
+                        a {
+                            width: 25%;
+                            text-align: center;
+                            text-decoration: none;
+                            color: #333333;
+                            position: relative;
+                            font-size: vw(28);
+                        }
+
+                        a:last-child::after {
+                            content: "";
+                            display: block;
+                            width: vw(12);
+                            height: vw(20);
+                            background: url(../images/qb_03.gif);
+                            background-size: cover;
+                            position: absolute;
+                            right: vw(20);
+                            top: vw(12);
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        //结婚工具
+        .marry-tool {
+            height: vw(260);
+
+            .conten {
+                height: vw(82);
+
+                .marry {
+                    height: vw(82);
+
+                    h2 {
+                        font-size: vw(32);
+                        line-height: vw(82);
+                    }
+                }
+            }
+
+            .tool-body {
+                height: vw(178);
+                display: flex;
+                overflow: auto;
+
+                .tb {
+                    height: vw(140);
+                    width: vw(230);
+                    background: #fff;
+                    border-radius: vw(30);
+                    flex-shrink: 0;
+                    margin-top: vw(10);
+                    margin-left: vw(20);
+                    box-shadow: 0px 0px 5px 0px #ccc;
+
+                    .tb-title {
+                        height: vw(71);
+                        line-height: vw(71);
+                        font-size: vw(31);
+                        padding-left: vw(29);
+
+                    }
+
+                    .tb-b {
+                        display: flex;
+
+                        span {
+                            font-size: vw(23);
+                            color: #656565;
+                            padding-left: vw(29);
+                        }
+
+                        i {
+                            width: vw(44);
+                            height: vw(44);
+                            margin-left: vw(41);
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        //结婚用品
+        .m-articles {
+            height: vw(560);
+
+            .conten {
+                .ar-title {
+                    height: vw(124);
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+
+                    h2 {
+                        font-size: vw(37);
+                        line-height: vw(37);
+                    }
+
+                    span {
+                        position: absolute;
+                        right: 0;
+                        font-size: vw(26);
+                        color: #999999;
+                    }
+                }
+
+                .ar-conten {
+                    height: vw(436);
+                    display: flex;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .co-left {
+                        width: vw(343);
+                        height: 100%;
+
+                        .le-top {
+                            height: 50%;
+                            width: 100%;
+                            background: url(../images/hf.png);
+                            background-size: cover;
+                            border-top-left-radius: vw(20);
+                        }
+
+                        .le-bot {
+                            height: 50%;
+                            width: 100%;
+                            background: url(../images/hx.png);
+                            background-size: cover;
+                            border-bottom-left-radius: vw(20);
+                        }
+
+                    }
+
+                    .co-rigth {
+                        width: vw(343);
+                        height: 100%;
+                        background: url(../images/hs.png);
+                        background-size: cover;
+                        border-top-right-radius: vw(20);
+                        border-bottom-right-radius: vw(20);
+                    }
+                }
+            }
+        }
+
+        //结婚美图
+        .mito {
+            height: vw(470);
+
+            .conten {
+
+                .mt-title {
+                    height: vw(124);
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+
+                    h2 {
+                        font-size: vw(37);
+                        line-height: vw(37);
+                    }
+
+                    span {
+                        position: absolute;
+                        right: 0;
+                        font-size: vw(26);
+                        color: #999999;
+                    }
+                }
+
+                .mt-conten {
+                    height: vw(320);
+                    position: relative;
+
+                    .sx {
+                        width: vw(646);
+                        height: vw(300);
+                        background: #fff;
+                        border-radius: vw(20);
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        box-shadow: 0px 0px 5px 0px #ccc;
+
+                        p {
+                            position: absolute;
+                            right: vw(36);
+                            top: vw(80);
+                            font-size: vw(34);
+                            color: #333333;
+
+                        }
+
+                        span {
+                            display: block;
+                            width: vw(56);
+                            height: vw(56);
+                            color: #fff;
+                            position: absolute;
+                            top: vw(165);
+                            right: vw(158);
+                            text-align: center;
+                            line-height: vw(56);
+                            border-radius: 50%;
+                            background: #f13544;
+                            font-size: vw(14);
+                        }
+                    }
+
+                    .mt-img {
+                        width: vw(440);
+                        height: vw(300);
+                        background: url(../images/sx.jpg);
+                        background-size: cover;
+                        border-radius: vw(20);
+                        position: absolute;
+                    }
+                }
+            }
+
+        }
+
+        //清新图
+        .im {
+            height: vw(240);
+            display: flex;
+            justify-content: space-around;
+
+            .im-ti {
+                width: vw(215);
+                height: vw(240);
+                box-shadow: 0px 0px 5px 0px #ccc;
+                text-align: center;
+                font-size: vw(22);
+                border-radius: vw(30);
+
+                img {
+                    width: vw(215);
+                    height: vw(160);
+                    border-top-left-radius: vw(30);
+                    border-top-right-radius: vw(30);
+                }
+            }
+        }
+
+        //攻略
+        .strategy {
+            .conten {
+                .st-title {
+                    height: vw(124);
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+
+                    h2 {
+                        font-size: vw(37);
+                        line-height: vw(37);
+                    }
+
+                    span {
+                        position: absolute;
+                        right: 0;
+                        font-size: vw(26);
+                        color: #999999;
+                    }
+                }
+
+                .st-conten {
+                    // height: vw(282);
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: vw(35);
+
+                    .con-lt {
+                        width: vw(280);
+                        height: vw(220);
+                        background: url(../images/xx.jpg);
+                        background-size: cover;
+                        border-radius: vw(20);
+                    }
+
+                    .con-rt {
+                        width: vw(475);
+                        height: vw(242);
+                        background: #fff;
+                        box-shadow: 0px 0px 5px #ccc;
+                        border-radius: vw(20);
+                        position: relative;
+                        margin: auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        h3 {
+                            font-size: vw(30);
+                            width: vw(336);
+                        }
+
+                        .time {
+                            width: vw(336);
+                            height: vw(56);
+                            font-size: vw(19);
+                            margin-left: vw(20);
+                            display: flex;
+                            margin-top: vw(36);
+
+                            p {
+                                line-height: vw(56);
+                            }
+
+                            span {
+                                display: block;
+                                width: vw(56);
+                                height: vw(56);
+                                color: #fff;
+                                top: vw(165);
+                                right: vw(158);
+                                text-align: center;
+                                line-height: vw(56);
+                                border-radius: 50%;
+                                background: #f13544;
+                                font-size: vw(14);
+                                margin-left: vw(70);
+                            }
+                        }
+                    }
+
+                    .con-rt::after {
+                        display: block;
+                        content: "";
+                        width: vw(88);
+                        height: vw(282);
+                        position: absolute;
+                        top: vw(-15);
+                        left: vw(-75);
+                        background: url(../images/bsd.png);
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .footer {
+        height: vw(288);
+        overflow: hidden;
+        background: #f2f3f7;
+
+        .f-dow {
+            width: 100%;
+            height: vw(60);
+            display: flex;
+            margin-top: vw(60);
+            margin-bottom: vw(39);
+            justify-content: center;
+
+            a {
+                width: vw(202);
+                height: vw(60);
+                font-size: vw(26);
+                line-height: vw(60);
+                text-align: center;
+                border-radius: vw(50);
+                text-decoration: none;
+            }
+
+            a:nth-child(1) {
+                background: #f43441;
+                color: #fff;
+                margin-right: vw(40);
+            }
+
+            a:nth-child(2) {
+                background: #fff;
+                color: #f43441;
+            }
+        }
+
+        p {
+            font-size: vw(22);
+            color: #a3a4a8;
+            text-align: center;
+            margin-bottom: vw(22);
+        }
+    }
+}

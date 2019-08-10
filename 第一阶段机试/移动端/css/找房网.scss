@@ -1,0 +1,407 @@
+@function vw($px) {
+    @return ($px / 750) *100vw;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#zfw {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .zfw-header {
+        height: vw(102);
+        display: flex;
+
+        .city {
+            flex: 1;
+            font-size: vw(26);
+            text-align: center;
+            line-height: vw(102);
+            position: relative;
+        }
+
+        .city::after {
+            display: block;
+            content: "";
+            width: 0;
+            height: 0;
+            border: vw(8) solid transparent;
+            border-top: vw(8) solid #000;
+            position: absolute;
+            top: vw(45);
+            right: vw(10);
+        }
+
+        .search {
+            flex: 4;
+            display: flex;
+            align-items: center;
+
+            .sousuo {
+                width: vw(510);
+                height: vw(60);
+                border-radius: vw(50);
+                display: flex;
+                align-items: center;
+                background: #f2f2f2;
+
+                .s {
+                    font-size: vw(27);
+                    margin-left: vw(20);
+                    margin-right: vw(20);
+                }
+
+                input {
+                    width: 80%;
+                    height: 100%;
+                    background: #f2f2f2;
+                    border: none;
+                    font-size: vw(26);
+
+                }
+            }
+        }
+
+        .user {
+            flex: 1;
+            text-align: center;
+            line-height: vw(102);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: vw(37);
+            }
+
+        }
+    }
+
+    .zfw-main {
+        flex: 1;
+
+        .banner {
+            height: vw(278);
+            background: url(../images/tfcr-banner@2x.png);
+            background-size: cover;
+        }
+
+
+        .fenlei {
+            height: vw(450);
+
+            ul {
+                display: flex;
+                height: 40%;
+
+                li {
+                    flex: 1;
+                    font-size: vw(24);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        width: vw(88);
+                        height: vw(88);
+                        background: url(../images/menu_icon3.png);
+                        background-size: vw(380);
+                    }
+
+                    .ic1 {
+                        background: url(../images/menu_icon3.png);
+                        background-size: vw(380);
+                        background-position: 0 vw(-98);
+                    }
+
+                    .ic2 {
+                        background: url(../images/menu_icon3.png);
+                        background-size: vw(380);
+                        background-position: vw(-190) vw(-100);
+                    }
+
+                    .ic3 {
+                        background: url(../images/menu_icon3.png);
+                        background-size: vw(380);
+                        background-position: vw(-98) vw(-100);
+                    }
+
+                    .ic4 {
+                        background: url(../images/menu_icon3.png);
+                        background-size: vw(380);
+                        background-position: vw(-190) vw(0);
+                    }
+
+                    span {
+                        margin-top: vw(18);
+                    }
+                }
+
+
+            }
+
+            .gonggao {
+                height: vw(90);
+                overflow: hidden;
+                border-bottom: 2px solid #ccc;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                .gg {
+                    font-size: vw(24);
+                    color: #f40;
+                    margin-left: vw(31);
+                    margin-right: vw(18);
+
+                }
+
+                p {
+                    font-size: vw(24);
+                }
+
+                .more {
+                    position: absolute;
+                    right: vw(38);
+                }
+            }
+        }
+
+
+        // 热门活动
+        .hot {
+            height: vw(390);
+
+            .title {
+                height: vw(150);
+
+                h2 {
+
+                    line-height: vw(148);
+                    margin-left: vw(32);
+                    font-size: vw(40);
+                }
+            }
+
+            .hd {
+                height: vw(240);
+                overflow: auto;
+
+                ul {
+                    display: flex;
+                    height: 100%;
+
+                    li {
+                        width: vw(644);
+                        height: vw(240);
+                        flex-shrink: 0;
+                        margin-left: vw(24);
+                    }
+
+                    li:nth-child(1) {
+                        background: url(../images/stuNl-banner3.png);
+                        background-size: cover;
+                    }
+
+                    li:nth-child(2) {
+                        background: url(../images/banner2_bg@3x.png);
+                        background-size: cover;
+                    }
+
+
+                }
+            }
+        }
+
+        // 猜你喜欢
+        .cnxh {
+            height: vw(150);
+            display: flex;
+            align-items: center;
+
+            h2 {
+                flex: 2;
+                font-size: vw(40);
+                margin-left: vw(20);
+            }
+
+            ul {
+                flex: 1;
+                display: flex;
+
+                li {
+                    flex: 1;
+                    text-align: center;
+                    font-size: vw(26);
+                }
+
+                li:nth-child(1) {
+                    color: #f85a5b;
+                }
+            }
+        }
+
+        // 房源
+        .home {
+            .home-main {
+                width: 95%;
+                height: vw(220);
+                display: flex;
+                align-items: center;
+                margin-left: vw(30);
+
+                border-bottom: 2px solid #f5f5f5;
+
+                .home-img {
+                    width: vw(210);
+                    height: vw(160);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .home-title {
+                    width: 65%;
+                    height: vw(160);
+                    margin-left: vw(30);
+
+                    h3 {
+                        font-size: vw(29);
+                        color: #5b5a5f;
+                    }
+
+                    .yd {
+                        font-size: vw(20);
+                        color: #cbcbcb;
+                    }
+
+                    .yh {
+                        font-size: vw(20);
+                        display: flex;
+                        margin-top: vw(16);
+
+                        span {
+                            display: block;
+                            width: vw(86);
+                            height: vw(32);
+                            text-align: center;
+                            margin-right: vw(14);
+                        }
+
+                        span:nth-child(1) {
+                            color: #d85251;
+                            background: #fbf0ee;
+                        }
+
+                        span:nth-child(2) {
+                            color: #fbf9ec;
+                            background: #eea439;
+                        }
+
+                        span:nth-child(3) {
+                            color: #effafe;
+                            background: #3ea9df;
+                        }
+                    }
+
+                    p {
+                        font-size: vw(19);
+
+                        span:nth-child(1) {
+                            font-size: vw(26);
+                            color: #e42e3b;
+                        }
+
+                        span:nth-child(2) {
+                            color: #c4c4c6;
+                            font-size: vw(19);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .zfw-footer {
+        height: vw(163);
+        background: #2f3130;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: vw(10);
+
+        .nav {
+            width: vw(690);
+            height: vw(60);
+            border-bottom: 1px solid #ccc;
+
+            ul {
+                width: vw(350);
+                margin-top: vw(19);
+
+                li {
+                    float: left;
+                    font-size: vw(19);
+                    color: #6d6d6d;
+                    border-right: 1px solid #ccc;
+                    padding-right: vw(10);
+                    padding-left: vw(10);
+                }
+
+                li:last-child {
+                    border: none;
+                }
+            }
+        }
+
+        .footer-main {
+            width: vw(690);
+            height: vw(101);
+            display: flex;
+            align-items: center;
+
+            .system {
+                width: vw(250);
+                height: 100%;
+                display: flex;
+                background: red;
+
+                .syt {
+
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        font-size: vw(37);
+                    }
+
+                    span {
+                        font-size: vw(13);
+                    }
+
+                }
+            }
+
+            .beian {
+                width: 100%;
+
+                p {
+
+                    font-size: vw(17);
+                    color: #5c5c5c;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
